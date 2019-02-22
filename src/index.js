@@ -38,7 +38,7 @@ module.exports = function getZerosCount(number, base) {
       zeros[i] = 0;
       while (count) {
         zeros[i] += count;
-        array[i] *= array[i];
+        array[i] *= arrayUniq[i];
         count = Math.trunc(number / array[i]);
       }
     }
